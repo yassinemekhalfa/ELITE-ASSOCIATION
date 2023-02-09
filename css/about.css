@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   }
+
+   :root {
+    --color-yacine:  #7CFC00;
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-waening: #f7c94b;
+    --color-danger:  #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --color-dla3i: #FFD700;
+    --color-dlai: #fbf7f4;
+    --color-black: #000;
+    --color-bleuciel: #4fa4f4;
+    --color-riptide: #87e6cc;
+    --color-tango: #f3771e;
+
+
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+   }
+
+
+/* ========== team ========== */
+.team {
+    background: var(--color-white);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0 0.5);
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background: var(--color-tango);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover {
+    background: transparent;
+    border-color: var(--color-tango);
+}
+
+.team__member-image img {
+    filter: saturate(0);
+}
+
+.team__member:hover img {
+    filter: saturate(1);
+}
+
+.team__member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__member-info p {
+    color: var(--color-tango);
+}
+
+.team__member-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0 0.3);
+    transition: var(--transition);
+}
+
+.team__member:hover .team__member-socials {
+    right: 0;
+}
+
+.team__member-socials a {
+    padding: 1rem;
+}
+
+/* ========== media queris (tablets) ========== */
+@media screen and (max-width: 1024px) {
+    .team__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team__member {
+        padding: 1rem;
+    }
+}
+
+/* ========== media queris (tablets) ========== */
+@media screen and (max-width: 600px) {
+   .team__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+   }
+
+   .team__member {
+    padding: 0;
+   }
+
+   .team__member p {
+    margin-bottom: 1.5rem;
+   }
+}

@@ -1,0 +1,70 @@
+/* Code By WebDevTrick ( https://webdevtrick.com ) */
+body {
+  background: #333;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.load-more-container {
+  background: #fff;
+  width: 500px;
+  min-height: 500px;
+  margin: 20px auto;
+  position: relative;
+}
+.load-more-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.load-more-container ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.load-more-container ul li {
+  width: calc(25% - 10px);
+  margin: 10px 5px 0;
+  height: 100px;
+  background:  #1D95F8;
+  color: #fff;
+  float: left;
+  border-radius: 2px;
+}
+.load-more-container ul li:nth-child(1n + 5) {
+  max-height: 0;
+  opacity: 0;
+  transition: 0.1s ease-in;
+}
+.load-more-container .load-more-btn {
+  width: 150px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: block;
+  background:   #494747;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.load-more-container .load-more-btn:hover {
+  background: #333;
+}
+.load-more-container .load-more-btn .loaded {
+  display: none;
+}
+.load-more-container #load-more {
+  display: none;
+}
+.load-more-container #load-more:checked ~ ul li:nth-child(1n + 5) {
+  max-height: 999px;
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+.load-more-container #load-more:checked ~ .load-more-btn .loaded {
+  display: block;
+}
+.load-more-container #load-more:checked ~ .load-more-btn .unloaded {
+  display: none;
+}
