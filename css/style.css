@@ -129,8 +129,6 @@
       border: 1px solid transparent;
       font-weight: 500;
       transition: var(--transition);
-      cursor: pointer;
-      border-radius: 20px;
    }
 
    /*change navbar styls on scroll using javascript */
