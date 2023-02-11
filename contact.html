@@ -15,6 +15,7 @@
     <link href="preconnect" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
     <nav>
@@ -38,39 +39,52 @@
 
 
 <section class="contact">
-  <div class="contact__aside">
-    <div class="aside__image">
-      <img src="/images/Capture.PNG" alt="">
-    </div>
-    <h2>Contact Us</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maiores aliquid earum magnam nam maxime saepe eos architecto facere corrupti rem necessitatibus esse dicta, eligendi consequatur quo doloremque reiciendis? Fugit.</p>
-    <ul class="contact__details">
-      <li>
-        <i class="uil uil-phone-times"></i>
-        <h5>0798998842</h5>
-      </li>
-      <li>
-        <i class="uil uil-envelope"></i>
-        <h5>yacine@gmail.com</h5>
-      </li>
-      <li>
-        <i class="uil uil-location-point"></i>
-        <h5>tipaza, kolea</h5>
-      </li>
+  <div class="container contact__container">
+    <aside class="contact__aside">
+        <div class="aside__image">
+          <img src="/images/Capture.PNG" alt="">
+        </div>
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maiores aliquid earum magnam nam maxime saepe eos architecto facere corrupti rem necessitatibus esse dicta, eligendi consequatur quo doloremque reiciendis? Fugit.</p>
+        <ul class="contact__details">
+          <li>
+            <i class="uil uil-phone-times"></i>
+            <h5>0798998842</h5>
+          </li>
+          <li>
+            <i class="uil uil-envelope"></i>
+            <h5>yacine@gmail.com</h5>
+          </li>
+          <li>
+            <i class="uil uil-location-point"></i>
+            <h5>tipaza, kolea</h5>
+          </li>
+    
+          <li>
+            <a href="https://web.facebook.com/mekhalfayassine"><i class="uil uil-facebook-f"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/yassou_me/?hl=fr"><i class="uil uil-instagram-alt"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="uil uil-twitter"></i></a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/in/yacine-mekhalfa-057958176/"><i class="uil uil-linkedin"></i></a>
+        </li>
+        </ul>
+    </aside>
 
-      <li>
-        <a href="https://web.facebook.com/mekhalfayassine"><i class="uil uil-facebook-f"></i></a>
-    </li>
-    <li>
-        <a href="https://www.instagram.com/yassou_me/?hl=fr"><i class="uil uil-instagram-alt"></i></a>
-    </li>
-    <li>
-        <a href="#"><i class="uil uil-twitter"></i></a>
-    </li>
-    <li>
-        <a href="http://www.linkedin.com/in/yacine-mekhalfa-057958176/"><i class="uil uil-linkedin"></i></a>
-    </li>
-    </ul>
+
+    <form action="https://formspree.io/f/myyaenkj" method="POST" class="contact__form">
+        <div class="form__name">
+            <input type="text" name="first name" placeholder="first name" required>
+            <input type="text" name="last name" placeholder="last name" required>
+        </div>
+        <input type="email" name="email address" placeholder="your email address" required>
+        <textarea name="message" rows="7" placeholder="message" required></textarea>
+        <button type="submit" class="btn btn-primary">send message</button>
+    </form>
   </div>
 </section>
 
