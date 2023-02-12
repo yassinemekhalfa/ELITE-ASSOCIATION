@@ -22,11 +22,15 @@
 .aside__image {
   width: 12rem;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact__aside h2 {
   text-align: left;
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact__aside p {
