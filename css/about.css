@@ -114,7 +114,7 @@
     }
 }
 
-/* ========== media queris (tablets) ========== */
+/* ========== media queris (phone) ========== */
 @media screen and (max-width: 600px) {
    .team__container {
     grid-template-columns: 1fr 1fr;
