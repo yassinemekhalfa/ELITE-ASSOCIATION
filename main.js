@@ -6,6 +6,24 @@ window.addEventListener('scroll', () =>{
 })
 
 
+// show/hids faq answer
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+  faq.addEventListener('click' , () => {
+    faq.classList.toggle('open');
+
+
+    // change icon 
+    const icon = faq.querySelector('.faq__icon i');
+    if(icon.className === 'plus.png') {
+      icon.className = "plus.png"
+    }
+  })
+})
+
+
 // show/hide nav menu
 const menu = document.querySelector(".nav__menu");
 const menuBtn = document.querySelector("#open-menu-btn");
@@ -68,3 +86,6 @@ items.forEach((item, i) => {
   item.clicked = false;
   item.addEventListener('click', () => expand(item, i));
 });
+
+
+

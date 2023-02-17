@@ -27,6 +27,7 @@
     --color-bleuciel: #4fa4f4;
     --color-riptide: #87e6cc;
     --color-tango: #f3771e;
+    --color-yellow: #FFFF00;
 
 
 
@@ -262,7 +263,7 @@
       gap: 2rem;
    }
 
-   .Events {
+   .course {
       background: var(--color-white);
       text-align: center;
       border: 1px solid transparent;
@@ -271,7 +272,7 @@
 
    .course:hover {
       background: transparent;
-      border-color: var(--color-primary);
+      border-color: var(--color-tango);
    }
 
    .course__info {
@@ -281,6 +282,52 @@
    .course__info p {
       margin: 1.2rem 0 2rem;
       font-size: 0.9rem;
+   }
+
+
+
+
+   /* ========== faq ========== */
+
+   .faqs {
+      background: var(--color-white);
+      
+   }
+
+   .faqs__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+   }
+
+   .faq {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      height: fit-content;
+      background: var(--color-yellow);
+      cursor: pointer;
+      border-radius: 2rem;
+   }
+
+   .faq h4 {
+      font-size: 1rem;
+      line-height: 2.2;
+   }
+
+   .faq__icon{
+      align-self: flex-start;
+      font-size: 1.2rem;
+   }
+
+   .faq p {
+      margin-top: 0.8rem;
+      display: none;
+   }
+
+   .faq.open p {
+      display: block;
    }
 
    
@@ -456,6 +503,13 @@
       grid-template-columns: 1fr 1fr;
    }
 
+
+   /* ========== faq ========== */
+   .faq {
+      grid-template-columns: 1.5rem;
+      
+   }
+
    /* ========== footer ========== */
    .footer__container {
       grid-template-columns: 1fr 1fr;
@@ -514,6 +568,7 @@
    .Events__container {
       grid-template-columns: 1fr;
    }
+   
 
    /* ========== footer ========== */
    .footer__container {

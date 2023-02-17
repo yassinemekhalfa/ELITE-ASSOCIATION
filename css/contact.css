@@ -26,6 +26,8 @@
   margin-right: auto;
 }
 
+
+
 .contact__aside h2 {
   text-align: left;
   margin-bottom: 1rem;
@@ -43,6 +45,14 @@
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.contact__details img {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .contact__socials {
