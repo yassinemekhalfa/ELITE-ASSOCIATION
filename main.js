@@ -17,8 +17,8 @@ faqs.forEach(faq => {
 
     // change icon 
     const icon = faq.querySelector('.faq__icon i');
-    if(icon.className === 'plus.png') {
-      icon.className = "plus.png"
+    if(icon.className === 'uil uil-plus') {
+      icon.className = "uil uil-minus"
     }
   })
 })
