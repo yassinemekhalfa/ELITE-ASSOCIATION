@@ -100,6 +100,7 @@
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
+    border-radius: 1rem;
    }
 
    .btn:hover {
