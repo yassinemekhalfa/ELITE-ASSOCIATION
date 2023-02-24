@@ -299,7 +299,7 @@
 /* ========== footer ========== */
 footer {
     background: var(--color-white);
-    margin-top: 30rem;
+    margin-top: 50rem;
     font-size: 0.9rem;
  }
 
@@ -412,7 +412,7 @@ footer {
       width: var(--container-width-sm);
       background: var(--color-riptide);
       border-radius: 5px;
-      margin-top: -15rem;
+      margin-top: -8rem;
    
    }
    
@@ -463,6 +463,8 @@ footer {
       cursor: pointer;
    }
 
+   
+
 
    /* ========== media quaries (phone) ========== */
 @media screen  and (max-width: 600px) {
@@ -483,7 +485,7 @@ footer {
       width: var(--container-width-sm);
       background: var(--color-riptide);
       border-radius: 5px;
-      margin-top: -1rem;
+      margin-top: auto;
    }
    
    .info_box .info_title {
