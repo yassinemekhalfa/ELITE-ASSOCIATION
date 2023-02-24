@@ -145,17 +145,6 @@
     object-fit: cover;
    }
 
-   .btn {
-    display: inline-block;
-    background: var(--color-tango);
-    color: var(--color-black);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    font-weight: 500;
-    transition: var(--transition);
-    border-radius: 1rem;
-   }
-
    .btn:hover {
     background: transparent;
     color: var(--color-black);
@@ -225,28 +214,33 @@
 
 .start_btn,
 .info_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1rem;
 }
 
 
 .start_btn button {
     font-size: 25px;
     font-weight: 500;
-    color: blue;
+    color: white;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background: var(--color-tango);
     cursor: pointer;
+    text-align: center;
+    margin-top: auto;
+    
+    
+    
 }
 
 .info_box{
    width: 540px;
-   background: #fff;
+   background: var(--color-riptide);
    border-radius: 5px;
 
 }
@@ -289,7 +283,7 @@
    margin: 0 5px;
    height: 40px;
    width: 100px;
-   border: 1px solid #007bff;
+   border: 1px solid transparent;
    background: #007bff;
    border-radius: 5px;
    color: #fff;
@@ -411,6 +405,62 @@ footer {
    }
 
 
+
+   .info_box{
+      width: var(--container-width-sm);
+      background: var(--color-riptide);
+      border-radius: 5px;
+   
+   }
+   
+   .info_box .info_title {
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+      padding: 0 35px;
+      font-size: 20px;
+      font-weight: 600;
+   }
+   
+   .info_box .info_list {
+      padding: 15px 35px;
+   }
+   
+   .info_box .info_list .info {
+      margin: 5px 0;
+      font-size: 17px;
+   }
+   
+   .info_box .info_list .info span {
+      font-weight: 600;
+      color: #007bff;
+   }
+   
+   .info_box .buttons{
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 35px;
+      border-top: 1px solid lightgray;
+   }
+   
+   .info_box .buttons button {
+      margin: 0 5px;
+      height: 40px;
+      width: 100px;
+      border: 1px solid #007bff;
+      background: #007bff;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+   }
+
+
    /* ========== media quaries (phone) ========== */
 @media screen  and (max-width: 600px) {
    .container {
@@ -420,6 +470,65 @@ footer {
    /* ========== navbar ========== */
    .nav__menu {
       right: 3%;
+   }
+
+
+
+
+
+   .info_box{
+      width: var(--container-width-sm);
+      background: var(--color-riptide);
+      border-radius: 5px;
+      
+   
+   }
+   
+   .info_box .info_title {
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+      padding: 0 35px;
+      font-size: 20px;
+      font-weight: 600;
+   }
+   
+   .info_box .info_list {
+      padding: 15px 35px;
+   }
+   
+   .info_box .info_list .info {
+      margin: 5px 0;
+      font-size: 17px;
+   }
+   
+   .info_box .info_list .info span {
+      font-weight: 600;
+      color: #007bff;
+   }
+   
+   .info_box .buttons{
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 35px;
+      border-top: 1px solid lightgray;
+   }
+   
+   .info_box .buttons button {
+      margin: 0 5px;
+      height: 40px;
+      width: 100px;
+      border: 1px solid #007bff;
+      background: #007bff;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
    }
 
 
