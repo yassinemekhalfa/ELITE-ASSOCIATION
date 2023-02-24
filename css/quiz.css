@@ -214,10 +214,12 @@
 
 .start_btn,
 .info_box {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -1rem;
+   margin-top: -1rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    
 }
 
 
@@ -297,7 +299,7 @@
 /* ========== footer ========== */
 footer {
     background: var(--color-white);
-    padding-top: 5rem;
+    margin-top: 30rem;
     font-size: 0.9rem;
  }
 
@@ -410,6 +412,7 @@ footer {
       width: var(--container-width-sm);
       background: var(--color-riptide);
       border-radius: 5px;
+      margin-top: -15rem;
    
    }
    
@@ -480,8 +483,7 @@ footer {
       width: var(--container-width-sm);
       background: var(--color-riptide);
       border-radius: 5px;
-      
-   
+      margin-top: -1rem;
    }
    
    .info_box .info_title {
