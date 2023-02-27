@@ -7,7 +7,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-image: url(./thumbimg_75049575046thumbejpg.jpg);
+    background-color: chocolate;
 }
 .side-nav{
     width: 110px;
@@ -74,6 +74,7 @@ ul li {
 ul li img {
     width: 30px;
     margin-right: 0px;
+    margin-top: auto;
 }
 
 ul li p {
@@ -117,3 +118,75 @@ ul li p {
 .side-nav:hover ul li {
     justify-content: flex-start;
 }
+
+
+ /* ========== CATEGORIES ========== */
+ .departements {
+    margin-left: 16rem;
+    margin-right: 10rem;
+    margin-top: -30rem;
+    background: var(--color-white);
+    height: rem;
+ }
+
+ .departements h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+ }
+
+ .departements__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4rem;
+ }
+
+ .categories__left {
+    margin-right: 3rem;
+ }
+
+ .categories__left p {
+    margin: 1rem 0 3rem;
+ }
+
+ .categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+ }
+
+ .category {
+    background: cornflowerblue;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    
+ }
+
+ .category img {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.5rem;
+    margin-right: auto;
+ }
+
+ .category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+ }
+
+ 
+
+ .category h5 {
+    margin: 2rem 0 1rem;
+    text-align: center;
+ }
+
+ .category p {
+    font-size: 0.85rem;
+    margin-left: 10px;
+ }
+
+
+
+
+ 
+
