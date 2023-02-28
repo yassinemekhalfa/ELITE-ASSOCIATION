@@ -299,6 +299,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
+      width: auto;
+      height: auto;
    }
 
    .faq {
@@ -506,9 +508,12 @@
 
 
    /* ========== faq ========== */
-   .faq {
-      grid-template-columns: 1.5rem;
-      
+   .faqs__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      width: auto;
+      height: auto;
    }
 
    /* ========== footer ========== */
@@ -568,6 +573,14 @@
    /* ========== popular courses ========== */
    .Events__container {
       grid-template-columns: 1fr;
+   }
+
+   /* ========== faq ========== */
+   
+   .faqs__container {
+      grid-template-columns: 1fr;
+      width: auto;
+      height: auto;
    }
    
 
