@@ -226,6 +226,14 @@
 }
 
 
+.info_box.activeInfo{
+   z-index: 5;
+   opacity: 1;
+   pointer-events: auto;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+
 .start_btn button {
     font-size: 25px;
     font-weight: 500;
