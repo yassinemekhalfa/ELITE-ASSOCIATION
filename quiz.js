@@ -65,8 +65,8 @@ quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
 
-const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
+const next_btn = document.querySelector("main .next_btn");
+const bottom_ques_counter = document.querySelector("main .total_que");
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{
@@ -109,8 +109,8 @@ function showQuetions(index){
     }
 }
 // creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+let tickIconTag = '<div class="icon tick"><img src="./images/checkmark.png" width="20" height="20" srcset=""></div>';
+let crossIconTag = '<div class="icon cross"><img src="./images/close.png" width="20" height="20" srcset=""></div>';
 
 //if user clicked on option
 function optionSelected(answer){
@@ -217,10 +217,11 @@ let questions = [
     {
     numb: 1,
     question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    answer: "yassine",
     options: [
-      "Hyper Text Preprocessor",
+      "yassine",
       "Hyper Text Markup Language",
+      "Hyper Text Multiple Language",
       "Hyper Text Multiple Language",
       "Hyper Tool Multi Language"
     ]
