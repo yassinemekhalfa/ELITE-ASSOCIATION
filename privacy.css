@@ -1,0 +1,40 @@
+.text {
+    background: var(--color-riptide);
+    padding: 3rem;
+    border-radius: 1rem;
+    bottom: 10rem;
+  }
+  
+  .text {
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+  }
+  .text h3 {
+    text-align: center;
+    margin-top: -2rem;
+    color: tomato;
+  }
+
+  
+  .text p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+
+  /* ========== media queris (tablets) ========== */
+@media screen and (max-width: 1024px) {
+    .text {
+       width: var(--container-width-md);
+    }
+
+
+  /* ========== media quaries (phone) ========== */
+@media screen  and (max-width: 600px) {
+    .text {
+       width: var(--container-width-sm);
+    }
+  
+  
