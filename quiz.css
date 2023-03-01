@@ -362,7 +362,7 @@
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
+    background: #000000;
     border: 1px solid #343a40;
     user-select: none;
 }
@@ -603,6 +603,8 @@ footer {
  .footer__1 p {
     margin: 0 0 2rem;
  }
+ 
+ 
 
  footer ul li {
     margin-bottom: 0.7rem;
