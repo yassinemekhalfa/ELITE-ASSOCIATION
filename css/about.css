@@ -51,7 +51,7 @@
 }
 
 .team__member {
-    background: var(--color-tango);
+    background: var(--color-riptide);
     padding: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
