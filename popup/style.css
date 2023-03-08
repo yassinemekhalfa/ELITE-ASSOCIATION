@@ -24,7 +24,7 @@
   background: tomato;
   color: var(--white);
   padding: 0.7rem 1.7rem;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   cursor: pointer;
   border-radius: 1rem;
 }
@@ -138,4 +138,37 @@ input::placeholder {
 }
 
 /* ========== media quaries (phone) ========== */
-@media screen  and (max-width: 600px)
+@media screen  and (max-width: 600px) {
+
+  .heading {
+    width: var(--container-width-sm);
+  }
+
+
+  .text-light {
+    text-align: left;
+    left: auto;
+    width: var(--container-width-sm);
+  }
+
+  .modal-content {
+    margin: -1rem;
+  }
+
+  .modal-inner {
+    
+    width: 200rem;
+    width: var(--container-width-sm);
+    z-index: 100;
+    display: grid;
+    padding: 1rem;
+    border-radius: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: center;
+    background: var(--modal-bg);
+  }
+
+  .modal-content {
+    max-width: 600px;
+  }
+}

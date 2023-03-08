@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./popup/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -63,24 +64,24 @@
     <section class="departements">
         <div class="container departements__container">
             <div class="categories__left">
-                <h1 class="animate__animated animate__bounceInLeft animate__delay-3s animate__slower">Departements</h1>
-                <p>We can do anything we want to if we stick to it long enough</p>
-                <a href="#" class="btn">learn more</a>
+                <h1 data-aos="fade-up">Departements</h1>
+                <p data-aos="fade-down">We can do anything we want to if we stick to it long enough</p>
+                <a href="#" class="btn" data-aos="fade-right">learn more</a>
             </div>
             <div class="categories__right">
-                <article class="category">
+                <article class="category" data-aos="fade-up-right">
                     <span class="category__icon"><i><img src="./images/icons8-marketing-68.png"></i></span>
                     <h5>Marketing</h5>
                     
                 </article>
 
-                <article class="category">
+                <article class="category" data-aos="fade-up">
                     <span class="category__icon"><img src="./images/icons8-external-68.png" alt=""></i></span>
                     <h5>External</h5>
                     
                 </article>
 
-                <article class="category">
+                <article class="category" data-aos="fade-down">
                     <span class="category__icon"><img src="./images/icons8-cash-68.png" alt=""></span>
                     <h5>Tresorie</h5>
                     <div class="container1">
@@ -92,7 +93,7 @@
                       <div class="modal-container">
                         <div class="modal-inner">
                           <div class="btn-close">
-                            <ion-icon name="close-outline"></ion-icon>
+                            <ion-icon name="close-outline"><img src="./images/close.png" alt=""></ion-icon>
                           </div>
                           <div class="modal-image">
                             <img src="./images/icons8-cash-68.png"alt="Modal Image" class="modal-img">
@@ -108,13 +109,13 @@
                     
                 </article>
 
-                <article class="category">
+                <article class="category" data-aos="fade-right">
                     <span class="category__icon"><img src="./images/icons8-internal-68.png" alt=""></span>
                     <h5>Internal</h5>
                     
                 </article>
 
-                <article class="category">
+                <article class="category" data-aos="fade-left">
                     <span class="category__icon"><img src="./images/icons8-human-resources-68.png" alt=""></span>
                     <h5>Humains Ressources</h5>
                     
@@ -301,5 +302,9 @@
     
     <SCript src="./main.js"></SCript>
     <script src="./popup/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
