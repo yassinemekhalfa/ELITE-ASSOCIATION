@@ -146,6 +146,25 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
 
   }
 
+  .cd-schedule-modal__event-info h1 {
+    color: #000000;
+    margin-left: -1rem;
+    margin-top: 0rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1f254b;
+    font-size: 2rem;
+  }
+
+  .cd-schedule-modal__event-info img {
+    margin-top: 1rem;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+  }
+
 
 
 /*========== media quaries(tablets)==========*/
@@ -193,7 +212,7 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
     margin-left: -1rem;
     margin-top: 0rem;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     color: #1f254b;
     font-size: 2rem;
   }
@@ -209,9 +228,7 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
   
   .btn,
   .btn-primary {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    left: 7rem;
   }
 }
 
