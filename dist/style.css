@@ -32,6 +32,12 @@ section.client {
 section.client .section-title {
 	margin-bottom: 6em;
 }
+
+.carousel-client .slide img {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+}
 .bx-controls {
 	position: relative;
 }
