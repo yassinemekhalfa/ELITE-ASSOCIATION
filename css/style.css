@@ -341,7 +341,7 @@
    /* ========== footer ========== */
    footer {
       background: var(--color-white);
-      padding-top: 5rem;
+      padding-top: 10rem;
       font-size: 0.9rem;
    }
 
@@ -589,6 +589,12 @@
    
 
    /* ========== footer ========== */
+
+   .footer {
+      margin: 1rem auto;
+   }
+
+
    .footer__container {
       grid-template-columns: 1fr;
       text-align: center;

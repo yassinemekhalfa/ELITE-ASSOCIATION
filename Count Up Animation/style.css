@@ -77,10 +77,12 @@
 }
 @media screen and (max-width: 480px) {
   .wrapper2 {
+    margin-top: 9rem;
     gap: 15px;
   }
   .container2 {
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
     height: 25vmin;
     font-size: 8px;
   }
