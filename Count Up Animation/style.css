@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: -5rem;
 }
+
 .wrapper2 {
   margin-top: 8rem;
   position: absolute;
@@ -12,6 +13,19 @@
   justify-content: space-around;
   gap: 10px;
 }
+
+.h32::after {
+  content: "";
+  height: 3px;
+  background: #fbb900;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 .container2 {
   width: 28vmin;
   height: 28vmin;
@@ -22,23 +36,23 @@
   position: relative;
   font-size: 16px;
   border-radius: 0.5em;
-  background-color: #21242b;
-  border-bottom: 10px solid #18f98f;
+  background-color: #4fa4f4;
+  border-bottom: 10px solid #f3771e;
 }
 .container2 i {
-  color: #18f98f;
+  color: #f3771e;
   font-size: 2.5em;
   text-align: center;
 }
 .container2 span.num {
-  color: #ffffff;
+  color: #000000;
   display: grid;
   place-items: center;
   font-weight: 600;
   font-size: 3em;
 }
 .container2 span.text {
-  color: #e0e0e0;
+  color: #000000;
   font-size: 1em;
   text-align: center;
   pad: 0.7em 0;

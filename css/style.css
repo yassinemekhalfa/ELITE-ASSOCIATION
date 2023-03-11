@@ -15,7 +15,7 @@
     --color-waening: #f7c94b;
     --color-danger:  #f75842;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #fff;
+    --color-white: #ffffff;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #000;
     --color-bg: #1f2641;
@@ -25,7 +25,7 @@
     --color-dlai: #fbf7f4;
     --color-black: #000;
     --color-bleuciel: #4fa4f4;
-    --color-riptide: #87e6cc;
+    --color-riptide: #4fa4f4;
     --color-tango: #f3771e;
     --color-yellow: #FFFF00;
 
@@ -173,6 +173,8 @@
       overflow: hidden;
       height: 70vh;
       margin-bottom: 5rem;
+
+
    }
 
    .header__container {
@@ -186,11 +188,8 @@
    .header__left p {
       margin: 1rem 0 2.4rem;
    }
+
    
-
-      
-
-
    /* ========== CATEGORIES ========== */
    .departements {
       background: var(--color-white);
@@ -211,6 +210,18 @@
    .categories__left {
       margin-right: 3rem;
    }
+
+   .categories__left h1::after {
+      content: "";
+      height: 3px;
+      background: #fbb900;
+      width: 250px;
+      position: absolute;
+      left: -7rem;
+      right: 0;
+      margin: auto;
+      margin-top: 3rem;
+    }
 
    .categories__left p {
       margin: 1rem 0 3rem;
@@ -257,7 +268,20 @@
 
    .Events {
       margin-top: 10rem;
+      background: var(--color-white);
    }
+
+   .Events h2::after {
+      content: "";
+      height: 3px;
+      background: #fbb900;
+      width: 200px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top: 3rem;
+    }
 
    .Events__container {
       display: grid;
@@ -265,25 +289,33 @@
       gap: 2rem;
    }
 
+
    .course {
       background: var(--color-white);
       text-align: center;
       border: 1px solid transparent;
       transition: var(--transition);
+      border-radius: 1rem;
+   }
+   .course__image {
+      border-radius: 1rem;
    }
 
    .course:hover {
       background: transparent;
       border-color: var(--color-tango);
+      border-radius: 1rem;
    }
 
    .course__info {
       padding: 2rem;
+      border-radius: 1rem;
    }
 
    .course__info p {
       margin: 1.2rem 0 2rem;
       font-size: 0.9rem;
+      border-radius: 1rem;
    }
 
 
@@ -295,6 +327,18 @@
       background: var(--color-white);
       
    }
+
+   .faqs h2::after {
+      content: "";
+      height: 3px;
+      background: #fbb900;
+      width: 300px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top: 4rem;
+    }
 
    .faqs__container {
       display: grid;
