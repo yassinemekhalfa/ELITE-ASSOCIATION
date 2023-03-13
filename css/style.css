@@ -189,6 +189,42 @@
       margin: 1rem 0 2.4rem;
    }
 
+
+
+
+   /*Notification
+----------------------------------------------*/
+
+.notify-alert-box{
+	width: 400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	top: 0; /*top: -100%;*/
+	padding: 20px;
+	z-index: 100000;
+	background:#fff;
+	color: #333;
+	transition: all 1s ease-in-out;
+}
+.notify-alert-box img{
+	width: 70px;
+	float: left;
+	margin-right: 10px;
+}
+
+.buttons{
+	text-align: right;
+}
+.buttons button{
+	background:#024e73;
+	color: #fff;
+	border:0;
+	padding: 8px 15px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
    
    /* ========== CATEGORIES ========== */
    .departements {
@@ -356,7 +392,7 @@
       height: fit-content;
       background: var(--color-riptide);
       cursor: pointer;
-      border-radius: 2rem;
+      border-radius: 15px 50px;
    }
 
    .faq h4 {
