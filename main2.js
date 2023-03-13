@@ -1,29 +1,29 @@
 setTimeout(function(){
-	document.querySelector('.notify-alert-box').style.top='0';
-},1000)
+	document.querySelector('.notify-alert-box').style.top='0'
+},1000);
 
 document.querySelector('#notify-button').onclick = async () => {
-	localStorage.setItem('notify','true')
-	notifyTrue()
-	notifyOption()
+	localStorage.setItem('notify','true');
+	notifyTrue();
+	notifyOption();
 }
 function notifyTrue(){
 	if(localStorage.getItem('notify','true')){
-		document.querySelector('.notify-alert-box').style.display='none';
+		document.querySelector('.notify-alert-box').style.display='none'
 	}
 }
-notifyTrue()
+notifyTrue();
 
 document.querySelector('#notify-cancel-button').onclick = async () => {
 	localStorage.setItem('notify','false')
-	notifyFalse()	
+	notifyFalse();	
 }
 function notifyFalse(){
 	if(localStorage.getItem('notify','false')){
 		document.querySelector('.notify-alert-box').style.display='none';
 	}
 }
-notifyFalse()
+notifyFalse();
 
 
 function showNotification(){
@@ -49,7 +49,7 @@ function notifyOption(){
 	if(localStorage.notify == 'true'){
 		const timestamp = new Date().getTime() + 5 * 1000;
 		if(Notification.permission == "granted"){
-			showNotification()
+			//showNotification()
 			if(localStorage.notifyMessage === undefined){
 				localStorage.setItem('notifyMessage', timestamp)
 				showNotification()
@@ -78,6 +78,10 @@ function notifyOption(){
 	}
 
 }
-notifyOption()
+notifyOption();
+
+
+
+
 
 
