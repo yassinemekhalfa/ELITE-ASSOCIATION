@@ -167,6 +167,12 @@
    }
 
    /* ========== HEADER ========== */
+
+   header {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
    header {
       position: relative;
       top: 5rem;
