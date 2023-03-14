@@ -1,0 +1,185 @@
+// Story content toggle
+.content-story-toggle--js {
+  // Graphics area
+  .cs--graphics-area {
+    display: grid;
+
+    .cs--graphics-sequence {
+      grid-column: 1;
+      grid-row: 1;
+      opacity: 0;
+      transition-property: all;
+      transition-duration: 0.25s;
+      transition-timing-function: ease;
+
+      &.is--active {
+        opacity: 1;
+      }
+    }
+  }
+
+  // Content area
+  .cs--content-area {
+    .cs--content-sequence {
+      position: relative;
+      min-height: 28px;
+      padding: 0 0 0 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      // Progress indicator
+      .cs--content-progress-indicator--wrapper {
+        position: absolute;
+        display: inline-block;
+        width: 3px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #dcdcdc;
+        border-radius: 3px;
+        will-change: max-height;
+        overflow: hidden;
+
+        .cs--content-progress-indicator--bar {
+          position: absolute;
+          display: inline-block;
+          width: 100%;
+          height: $width;
+          top: 0;
+          left: 0;
+          background-color: #3c4043;
+          scale: 1 0;
+          transform-origin: top;
+        }
+      }
+
+      .cs--content-headline {
+        cursor: pointer;
+
+        h3 {
+          opacity: 0.6;
+          transition-property: all;
+          transition-duration: 0.25s;
+          transition-timing-function: ease;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .cs--content-desc {
+        height: 0;
+        overflow: hidden;
+      }
+    }
+
+    &.is--active {
+      .cs--content-sequence {
+        .cs--content-progress-indicator--wrapper {
+          .cs--content-progress-indicator--bar {
+            animation: fillProgress linear;
+            animation-duration: var(--slideDuration, 2s);
+
+            &.paused {
+              animation: none;
+            }
+          }
+        }
+        .cs--content-headline {
+          h3 {
+            color: #3c4043;
+            opacity: 1;
+          }
+        }
+        .cs--content-desc {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fillProgress {
+  0% {
+    scale: 1 0;
+  }
+  100% {
+    scale: 1 1;
+  }
+}
+
+// General stuff
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4043;
+}
+
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4043;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 12px;
+  color: #3c4043;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: $width;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 40px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .width--55 {
+      width: 55%;
+      padding: 40px;
+    }
+
+    .width--45 {
+      width: 45%;
+      padding: 40px;
+
+      .content--wrapper {
+        padding-bottom: 12px;
+
+        p {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

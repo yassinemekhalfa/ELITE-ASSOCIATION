@@ -1,0 +1,155 @@
+.content-story-toggle--js .cs--graphics-area {
+  display: grid;
+}
+.content-story-toggle--js .cs--graphics-area .cs--graphics-sequence {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+.content-story-toggle--js .cs--graphics-area .cs--graphics-sequence.is--active {
+  opacity: 1;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence {
+  position: relative;
+  min-height: 28px;
+  padding: 0 0 0 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-progress-indicator--wrapper {
+  position: absolute;
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #dcdcdc;
+  border-radius: 3px;
+  will-change: max-height;
+  overflow: hidden;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-progress-indicator--wrapper .cs--content-progress-indicator--bar {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3c4043;
+  scale: 1 0;
+  transform-origin: top;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-headline {
+  cursor: pointer;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-headline h3 {
+  opacity: 0.6;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-headline h3:hover {
+  opacity: 1;
+}
+.content-story-toggle--js .cs--content-area .cs--content-sequence .cs--content-desc {
+  height: 0;
+  overflow: hidden;
+}
+.content-story-toggle--js .cs--content-area.is--active .cs--content-sequence .cs--content-progress-indicator--wrapper .cs--content-progress-indicator--bar {
+  animation: fillProgress linear;
+  animation-duration: var(--slideDuration, 2s);
+}
+.content-story-toggle--js .cs--content-area.is--active .cs--content-sequence .cs--content-progress-indicator--wrapper .cs--content-progress-indicator--bar.paused {
+  animation: none;
+}
+.content-story-toggle--js .cs--content-area.is--active .cs--content-sequence .cs--content-headline h3 {
+  color: #3c4043;
+  opacity: 1;
+}
+.content-story-toggle--js .cs--content-area.is--active .cs--content-sequence .cs--content-desc {
+  height: auto;
+}
+@keyframes fillProgress {
+  0% {
+    scale: 1 0;
+  }
+  100% {
+    scale: 1 1;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content--wrapper h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4043;
+}
+.cs--content-headline h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4043;
+}
+.content--wrapper,
+.cs--content-desc p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 12px;
+  color: #3c4043;
+}
+.cs--graphics-sequence img {
+  display: block;
+  width: 100%;
+}
+main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 40px;
+}
+main .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .row .width--55 {
+  width: 55%;
+  padding: 40px;
+}
+main .row .width--45 {
+  width: 45%;
+  padding: 40px;
+}
+main .row .width--45 .content--wrapper {
+  padding-bottom: 12px;
+}
+main .row .width--45 .content--wrapper p {
+  margin-top: 16px;
+}
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 5rem;
+
+
+}

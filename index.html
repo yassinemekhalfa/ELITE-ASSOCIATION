@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="./Count Up Animation/style.css">
-    <link rel="stylesheet" href="./cross-carousel-with-lit-element/dist/style.css">
+    <link rel="stylesheet" href="./content-story-toggle/dist/style.css">
 </head>
 <body>
     <nav>
@@ -52,56 +52,82 @@
     <header>
 
 
-        <!-- partial:index.partial.html -->
-<x-carousel id="carousel" index='2'>
-    <x-carousel-heading class="heading-1">
-        <div class="inner" data-region="1">
-            <span class="slide-number">01</span>
-            <div class="slide-name">Anthracene</div>
-        </div>
-    </x-carousel-heading>
-    <x-carousel-content class="content-1">
-        <div class="content-text">The irrespective overload ensures the concentrate. A labeled process favors a box. A
-            rumor troubles the lens. A screen counts?
-        </div>
-    </x-carousel-content>
-
-    <x-carousel-heading class="heading-2">
-        <div class="inner">
-            <span class="slide-number">02</span>
-            <div class="slide-name">Hamartia</div>
-        </div>
-    </x-carousel-heading>
-    <x-carousel-content class="content-2">
-        <div class="content-text">The sweating pill burns a hypocrisy past a feminist dictatorship. The rabbit relates to a fighter without a cant result. An external plague fiddles the last reporter. The allergic idiom pilots her geology around a sliced jack.
-        </div>
-    </x-carousel-content>
-
-    <x-carousel-heading class="heading-3">
-        <div class="inner">
-            <span class="slide-number">03</span>
-            <div class="slide-name">Usufruct</div>
-        </div>
-    </x-carousel-heading>
-    <x-carousel-content class="content-3">
-        <div class="content-text">The rectified teenager pops against a textbook. The taxpayer skips within a sector! The winding detective retracts the parallel horse. The dying attitude cracks the horse. The apparatus credits the tired cave against a batch. On top of the album noses our fame.</div>
-    </x-carousel-content>
-
-    <x-carousel-heading class="heading-4">
-        <div class="inner">
-            <span class="slide-number">04</span>
-            <div class="slide-name">Rialto</div>
-        </div>
-    </x-carousel-heading>
-    <x-carousel-content class="content-4">
-        <div class="content-text">How does a mailbox kid? Why can't a hospital man a passionate vocabulary? The task hums inside whatever meaning opus. The prize predicts the seventh handful beneath the baffle. The lesser leg poles the amazed hassle. Against its nonsense advertises a void.</div>
-    </x-carousel-content>
-</x-carousel>
-<!-- partial -->
-
+        <main>
+            <div class="row content-story-toggle--js" style="--slideDuration: 8s;">
+          
+              <!-- Graphics area -->
+              <div class="width--55">
+          
+                <div class="cs--graphics-area">
+          
+                  <!-- Item 1 -->
+                  <div class="cs--graphics-sequence">
+                    <img src="./images/flat-lay-plane-boxes.jpg" width="500px" height="500px" alt="">
+                  </div>
+          
+                  <!-- Item 2 -->
+                  <div class="cs--graphics-sequence">
+                    <img src="./images/travel-liechtenstein-top-view-ai.jpg" width="500px" height="500px" alt="">
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Content area -->
+              <div class="width--45">
+          
+                <!-- Intro -->
+                <div class="content--wrapper">
+                  <h2>WELCOME<br>To ELITE</h2>
+                  <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                </div>
+          
+                <!-- Item 1 -->
+                <div class="cs--content-area">
+                  <div class="cs--content-sequence">
+          
+                    <!-- Progress indicator -->
+                    <div class="cs--content-progress-indicator--wrapper">
+                      <div class="cs--content-progress-indicator--bar"></div>
+                    </div>
+          
+                    <!-- Title -->
+                    <div class="cs--content-headline">
+                      <h3>This is super fancy</h3>
+                    </div>
+          
+                    <!-- Desc -->
+                    <div class="cs--content-desc">
+                      <p>One morning, when Gregor Samsa woke from troubled dreams.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Item 2 -->
+                <div class="cs--content-area">
+                  <div class="cs--content-sequence">
+          
+                    <!-- Progress indicator -->
+                    <div class="cs--content-progress-indicator--wrapper">
+                      <div class="cs--content-progress-indicator--bar"></div>
+                    </div>
+          
+                    <!-- Title -->
+                    <div class="cs--content-headline">
+                      <h3>This is super trendy</h3>
+                    </div>
+          
+                    <!-- Desc -->
+                    <div class="cs--content-desc">
+                      <p>One morning, when Gregor Samsa woke from troubled dreams.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         
-    </header>
+        </main>
     <!--============ END OF HEADER ============-->
     
 
@@ -518,6 +544,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script><script  src="./slide/script.js"></script>
   <script type="text/javascript" src="./main2.js"></script>
-  <script type="module" src="./cross-carousel-with-lit-element/dist/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script><script  src="./content-story-toggle/dist/script.js"></script>
 </body>
 </html>
