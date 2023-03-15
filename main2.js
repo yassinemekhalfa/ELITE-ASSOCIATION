@@ -1,83 +1,94 @@
 setTimeout(function(){
-	document.querySelector('.notify-alert-box').style.top='0';
-},1000)
+	document.querySelector('.notify-alert-box').style.top='0'
+},1000);
 
 document.querySelector('#notify-button').onclick = async () => {
-	localStorage.setItem('notify','true')
-	notifyTrue()
-	//notifyOption()
+	localStorage.setItem('notify','true');
+	notifyTrue();
+	notifyOption();
 }
+
 function notifyTrue(){
 	if(localStorage.getItem('notify','true')){
-		document.querySelector('.notify-alert-box').style.display='none';
-	}
+		document.querySelector('.notify-alert-box').style.display='none'
+    }
 }
-notifyTrue()
+notifyTrue();
+
 
 document.querySelector('#notify-cancel-button').onclick = async () => {
-	localStorage.setItem('notify','false')
-	notifyFalse()	
+	localStorage.setItem('notify','False');
+	notifyFalse();
 }
-function notifyFalse(){
-	if(localStorage.getItem('notify','false')){
-		document.querySelector('.notify-alert-box').style.display='none';
-	}
-}
-notifyFalse()
 
+function notifyTrue(){
+	if(localStorage.getItem('notify','False')){
+		document.querySelector('.notify-alert-box').style.display='none'
+    }
+}
+notifyFalse();
 
 function showNotification(){
-	var notificationBody = new Notification('New Message from IT',{
-		body:'Hi Google',
-		//icon:'images/notify-logo.png',
-	});
-	/*notificationBody.onclick = (e) =>{
+	var notificationBody = new Notification('New Message from Google',{
+		body:'Google world',
+		icon:'images/notify-logo.png'
+
+	})
+	notificationBody.onclick = (e) =>{
 		window.location.href = 'https://google.com'
-	}*/
+	}
 }
-/*function showNotification2(){
-	var notificationBody = new Notification('New Message2 from IT',{
-		body:'Hi Invention Tricks'
-	});
+
+function showNotification2(){
+	var notificationBody = new Notification('New Message from elite',{
+		body:'elite world',
+		icon:'images/notify-logo.png'
+
+	})
 	notificationBody.onclick = (e) =>{
 		window.location.href = 'https://youtube.com'
 	}
-}*/
+}
 
-//console.log(Notification.permission);
+function showNotification3(){
+	var notificationBody = new Notification('New Message from youtube',{
+		body:'youtube world'
+
+	})
+}
+
+
+
+
 function notifyOption(){
 	if(localStorage.notify == 'true'){
-		const timestamp = new Date().getTime() + 5 * 1000;
 		if(Notification.permission == "granted"){
-			showNotification()
-			/*if(localStorage.notifyMessage === undefined){
-				localStorage.setItem('notifyMessage', timestamp)
-				showNotification()
+			//showNotification();
+			if(localStorage.notifyMessage === undefined){
+				localStorage.setItem('notifyMessage','true');
+				showNotification();
 			}
 			if(localStorage.notifyMessage2 === undefined){
-				localStorage.setItem('notifyMessage2', timestamp)
-				showNotification2()
+				localStorage.setItem('notifyMessage2','true');
+				showNotification2();
+			}
+			/*if(localStorage.notifyMessage3 === undefined){
+				localStorage.setItem('notifyMessage3','true');
+				showNotification3();
 			}*/
-		}else if(Notification.permission !== "denied"){
-			Notification.requestPermission().then(permission =>{
-				//console.log(permisshion)
-				//
-				if(permission == "granted"){
-					showNotification()
-					/*if(localStorage.notifyMessage === undefined){
-						localStorage.setItem('notifyMessage', timestamp)
-						showNotification()
-					}*/
-					
-					
-				}
-				
-			})
-		}
-
+	   }else if(Notification.permission !== "denied"){
+		 Notification.requestPermission().then(permission =>{
+			if(permission == "granted"){
+				if(localStorage.notifyMessage === undefined){
+					localStorage.setItem('notifyMessage','true');
+					showNotification();
+				} 
+			} 
+		})
 	}
 
+
 }
-notifyOption()
 
-
+}
+notifyOption();
