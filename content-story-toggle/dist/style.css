@@ -172,10 +172,13 @@ header {
     margin-left: -13rem;
   }
   .cs--graphics-sequence img{
-    margin-top: -3rem;
-    margin-left: -1rem;
+    margin-top: 13rem;
+    margin-left: -4rem;
     width: 300px;
-    height: 300px;
+    height: 500px;
     
+  }
+  .cs--content-area {
+    margin-left: 4rem;
   }
 }
