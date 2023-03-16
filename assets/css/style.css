@@ -165,6 +165,10 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
     border-radius: 1rem;
   }
 
+  .cd-schedule {
+    margin-top: 25rem;
+  }
+
 
 
 /*========== media quaries(tablets)==========*/
@@ -191,9 +195,9 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
         background:hsla(240, 8%, 12%, 0.1);
         background:hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.1)}
 
-    .text-xl,
+    .text-xl h1,
     .cd-schedule__events {
-        margin-top: -45rem;
+        margin-top: -25rem;
 
   }
 
@@ -201,6 +205,10 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
   .cd-schedule-modal__event-info {
     top: 1rem;
     background-color: #d3d3d4;
+  }
+
+  .cd-schedule {
+    margin-top: -30rem;
   }
 
 
@@ -229,6 +237,15 @@ max-width-adaptive,.max-width-adaptive-lg{max-width:38rem;max-width:var(--max-wi
   .btn,
   .btn-primary {
     left: 7rem;
+  }
+
+
+  .cd-main-header, 
+  .text-center, 
+  .flex, 
+  .flex-column, 
+  .flex-center{
+    margin-top: -12rem;
   }
 }
 

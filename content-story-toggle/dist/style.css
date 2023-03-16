@@ -157,15 +157,25 @@ header {
 
 /* ========== media quaries (phone) ========== */
 @media screen  and (max-width: 600px) {
-  .content--wrapper h2 br {
+
+  .content--wrapper h2 {
     left: -1000rem;
-    margin-top: -1rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: -13rem;
+  }
+
+  .content--wrapper p {
+    left: -1000rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: -13rem;
   }
   .cs--graphics-sequence img{
-    margin-top: -30rem;
-    margin-left: -5rem;
+    margin-top: -3rem;
+    margin-left: -1rem;
     width: 300px;
     height: 300px;
+    
   }
-  
-  }
+}
