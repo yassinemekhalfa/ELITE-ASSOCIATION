@@ -99,6 +99,38 @@
         </div>
     </div>
 
+
+
+
+    <div class="toggle">
+        <input type="checkbox" id="toggleBtn" />
+        <label for="toggleBtn">
+          <span class="toggle-icon">
+            <img src="./imgs/sun.svg" alt="sun icon" class="icon sun" />
+            <img src="./imgs/moon.svg" alt="moon icon" class="icon moon" />
+          </span>
+        </label>
+      </div>
+  
+      <script>
+        let toggleBtn = document.querySelector("#toggleBtn");
+  
+        let bodyEl = document.querySelector("body");
+  
+        let darkMode = false;
+  
+        toggleBtn.addEventListener('change', (event) => {
+          darkMode = event.target.checked;
+          if(darkMode) {
+            bodyEl.classList.add("dark");
+          } else {
+            bodyEl.classList.remove("dark");
+          }
+        })
+  
+  
+      </script>
+
     
 
     
